@@ -555,6 +555,10 @@ video {
   position: absolute;
 }
 
+.relative {
+  position: relative;
+}
+
 .left-6 {
   left: 1.5rem;
 }
@@ -722,6 +726,11 @@ video {
   padding: 1.5rem;
 }
 
+.py-\[34px\] {
+  padding-top: 34px;
+  padding-bottom: 34px;
+}
+
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -815,6 +824,14 @@ body {
   background-repeat: no-repeat;
 }
 
+.line {
+  width: 450px;
+  height: 1px;
+  background: rgba(255, 255, 255, .2);
+  z-index: 1;
+  margin-left: 50px;
+}
+
 .frostedGlass {
   background-color: rgba(255, 255, 255, .15);
   -webkit-backdrop-filter: blur(14px);
@@ -892,7 +909,7 @@ body {
 .circle:hover {
   outline-style: solid;
   outline-width: 60px;
-  outline-color: rgba(255, 255, 255, .2);
+  outline-color: rgba(255, 255, 255, .1);
 }
 
 @media(min-width: 445px) {
@@ -929,13 +946,16 @@ body {
   }
 }
 
-.hover\:border-b-2:hover {
-  border-bottom-width: 2px;
+.hover\:border-b-4:hover {
+  border-bottom-width: 4px;
 }
 
-.hover\:border-white:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+.hover\:border-solid:hover {
+  border-style: solid;
+}
+
+.hover\:border-kindaWhite:hover {
+  border-color: rgba(255, 255, 255, 0.4);
 }
 
 .focus\:outline-none:focus {
@@ -944,6 +964,10 @@ body {
 }
 
 @media (min-width: 480px) {
+  .sm\:hidden {
+    display: none;
+  }
+
   .sm\:w-auto {
     width: auto;
   }
@@ -994,9 +1018,9 @@ body {
 }
 
 @media (min-width: 976px) {
-  .lg\:mx-\[-48px\] {
-    margin-left: -48px;
-    margin-right: -48px;
+  .lg\:mx-\[-39px\] {
+    margin-left: -39px;
+    margin-right: -39px;
   }
 
   .lg\:mt-\[-20px\] {
@@ -1015,8 +1039,8 @@ body {
     height: 300px;
   }
 
-  .lg\:w-\[500px\] {
-    width: 500px;
+  .lg\:w-\[480px\] {
+    width: 480px;
   }
 
   .lg\:w-1\/2 {
@@ -1057,9 +1081,9 @@ body {
     padding: 1rem;
   }
 
-  .lg\:px-32 {
-    padding-left: 8rem;
-    padding-right: 8rem;
+  .lg\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 
   .lg\:py-9 {
@@ -1091,8 +1115,8 @@ body {
     font-size: 2rem;
   }
 
-  .lg\:text-\[152px\] {
-    font-size: 152px;
+  .lg\:text-\[142px\] {
+    font-size: 142px;
   }
 
   .lg\:text-4xl {
@@ -1115,6 +1139,10 @@ body {
 }
 
 @media (min-width: 1440px) {
+  .xl\:block {
+    display: block;
+  }
+
   .xl\:flex-row {
     flex-direction: row;
   }

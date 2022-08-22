@@ -14,6 +14,14 @@ body {
   background-repeat: no-repeat;
 }
 
+.line {
+  width: 450px;
+  height: 1px;
+  background: rgba(255, 255, 255, .2);
+  z-index: 1;
+  margin-left: 50px;
+}
+
 .frostedGlass {
   background-color: rgba(255, 255, 255, .15);  
   backdrop-filter: blur(14px);
@@ -90,8 +98,9 @@ body {
 .circle:hover {
   outline-style: solid;
   outline-width: 60px;
-  outline-color: rgba(255, 255, 255, .2);
+  outline-color: rgba(255, 255, 255, .1);
 }
+
 
 
 

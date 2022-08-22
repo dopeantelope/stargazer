@@ -11,7 +11,8 @@ module.exports = {
     extend: {
       colors: {
         darkBlueBackground: 'hsl(230, 35%, 7%)',
-        lightBlue: 'hsl(231, 77%, 90%)'
+        lightBlue: 'hsl(231, 77%, 90%)',
+        kindaWhite: 'rgba(255, 255, 255, 0.4)'
   
       }
     },
