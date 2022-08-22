@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;500&family=Bellefair&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <title>StarGazers</title>
+</head>
+<body class="m-6 h-screen bg-darkBlueBackground md:overflow-hidden">
+
+  <!-- HEADER -->
+
+  <header>
+    <nav class="text-white lg:p-4">
+      <div class="flex justify-between items-center">
+        <img src="home/logo.svg" alt="logo" class="w-[42px] h-[42px] md:w-[52px] md:h-[52px]">
+
+        <button id="menu-btn" class="block mt-[14px] align-middle hamburger md:hidden focus:outline-none">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom "></span>
+        </button>
+        <div class="frostedGlass lg:px-32 lg:py-9 lg:mx-[-48px]">
+          <ul class="hidden flex-row md:flex lg:space-x-16 font-['barlow_condensed'] font-light text-base mt-[-2px] lg:pr-20 lg:tracking-widest">
+            <li class="hover:border-b-2 hover:border-white"><a href='index.html'><span class="font-medium">00</span> HOME</a></li>
+            <li><a href='potd.html'><span class="font-medium">01</span> PICTURE OF THE DAY</a></li>
+            <li><span class="font-medium">02</span> MARS ROVER</li>
+            <li><span class="font-medium">03</span> ARCHIVE</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="md:hidden">
+        <div id="menu" class="absolute flex-col items-center self-end hidden py-8 mt-10 space-y-6 bg-darkBlueBackground sm:w-auto sm-self-center left-6 right-6 text-3xl font-['bellefair'] h-[550px]">
+          <a href="index.html" class="border-solid border-b-4 border-white">
+            01 HOME
+          </a>
+          <a href="potd.html" class="border-solid border-b-4 border-white">
+            02 PICTURE OF THE DAY
+          </a>
+          <a href="#" class="border-solid border-b-4 border-white">
+            03 MARS ROVER
+          </a>
+          <a href="#" class="border-solid border-b-4 border-white">
+            04 ARCHIVE
+          </a>
+          
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- HERO CONTAINER -->
+  <div class="lg:flex lg:flex-row lg:justify-between lg:pl-16 lg:h-full lg:items-center lg:pb-32 lg:mt-[-20px]">
+
+    <!-- HERO TEXT CONTAINER -->
+    <div class="text-white flex flex-col items-center lg:items-start lg:w-[500px] lg:pl-16">
+      <span class="text-lightBlue text-lg text-center font-['barlow_condensed'] font-light mt-8 lg:text-[2rem] lg:tracking-widest">
+        SO, YOU WANT TO TRAVEL TO
+      </span>
+      <h1 class="font-['bellefair'] text-[78px] my-10 lg:text-[152px]">
+        SPACE
+      </h1>
+      <p class="subtext text-lightBlue text-center text-lg font-['source_sans_pro'] mx-10 md:text-left md:mx-0 lg:leading-8">
+        Let's face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we'll give you a truly out of this world experience.
+      </p>
+    </div>
+    <div class="explore flex justify-center items-center mt-16 lg:w-1/2">
+        <button class="circle flex w-[150px] h-[150px] items-center justify-center bg-white rounded-full font-['bellefair'] text-2xl lg:w-[300px] lg:h-[300px]">
+          <span class="text-darkBlueBackground lg:text-4xl">
+            EXPLORE
+          </span>
+        </button>
+      </div>
+  </div>
+
+
+
+
+  <script src="js/main.js"></script>
+  <script src="js/potd.js"></script>
+</body>
+</html>
