@@ -4,7 +4,6 @@ A web application for space fans that displays the Astronomy Picture of the Day 
 
 **Link to project:** https://twitter.com/rexxlifebot
 
-![Alt Text](https://i.ibb.co/VDs5rvK/Screenshot-2022-08-09-at-18-56-03.png)
 
 ## How It's Made:
 
