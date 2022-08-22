@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;500&family=Bellefair&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;500&family=Bellefair&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/reset.css">
   <title>StarGazers</title>
@@ -57,11 +57,13 @@
 
 
   <!-- HERO TEXT -->
-  <section class="flex flex-col items-center text-center mt-6 md:px-8 xl:flex-row lg:flex-row lg:pl-12 lg:h-full lg:items-center lg:text-left" id="potd-display">
-    <img src="" alt="" id="potd-pictureOfTheDay">
-    <iframe src="" class="w-full h-[250px] mx-6 md:w-2/3 md:h-[400px] lg:w-full" id="potd-videoPlayer"></iframe>
-    <div>
-      <h2 class="text-white text-4xl font-['bellefair'] my-4 lg:text-6xl"></h2>
+  <section class="flex flex-col items-center text-center md:px-8 lg:flex-row-reverse lg:pl-12 lg:h-full lg:items-center lg:text-left" id="potd-display">
+    <div class="lg:w-1/2">
+      <img src="" alt="" id="potd-pictureOfTheDay">
+      <iframe src="" class="w-full h-[250px] mx-6 md:w-2/3 md:h-[400px] lg:w-full lg:pr-12" id="potd-videoPlayer"></iframe>
+    </div>
+    <div class="lg:pt-10 lg:pr-12 lg:w-1/2">
+      <h2 class="text-white text-4xl font-['bellefair'] my-4 lg:text-5xl"></h2>
       <p class="text-white text-lg font-['source_sans_pro'] leading-8"></p>
     </div>
   </section>
