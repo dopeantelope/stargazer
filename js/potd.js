@@ -16,8 +16,11 @@ function populateData(data) {
   console.log(data)
   if (data.media_type == 'video') {
     document.querySelector('#potd-videoPlayer').src = data.url
+    document.querySelector('#potd-pictureOfTheDay').style.display = 'none'
+
   } else {
     document.querySelector('#potd-pictureOfTheDay').src = data.hdurl
+    document.querySelector('#potd-videoPlayer').style.display = 'none'
   }
   document.querySelector('h2').innerText = data.title
   document.querySelector('p').innerText = data.explanation

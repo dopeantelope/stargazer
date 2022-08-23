@@ -57,9 +57,10 @@
 
 
   <!-- HERO TEXT -->
+  <h1 class="text-white">01 Astronomy Picture of the Day</h1>
   <section class="flex flex-col items-center text-center md:px-8 lg:flex-row-reverse lg:pl-12 lg:h-full lg:items-center lg:text-left" id="potd-display">
-    <div class="lg:w-1/2">
-      <img src="" alt="" id="potd-pictureOfTheDay">
+    <div class="lg:w-1/2 lg:flex lg:justify-center">
+      <img src="" alt="" class="xl:h-[700px]" id="potd-pictureOfTheDay">
       <iframe src="" class="w-full h-[250px] mx-6 md:w-2/3 md:h-[400px] lg:w-full lg:pr-12" id="potd-videoPlayer"></iframe>
     </div>
     <div class="lg:pt-10 lg:pr-12 lg:w-1/2">
@@ -68,6 +69,71 @@
     </div>
   </section>
 
+  <footer class="bg-veryDarkBlue xl:px-36">
+    <!-- Flex Container -->
+    <div class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
+      <!-- Logo & Social Links Container -->
+      <div class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start">
+        <div class="mx-auto my-6 text-center text-white md:hidden">
+          Copyright &copy; 2022, All Rights Reserved
+        </div>
+        <!-- Logo -->
+        <img src="images/logo.svg" alt="logo">
+      <!-- Social Links Container-->
+      <div class="flex justify-center space-x-4">
+        <!-- Link 1 -->
+        <a href="#">
+          <img src="images/icon-facebook.svg" class="h-8" alt="facebook icon">
+        </a>
+        <!-- Link 2 -->
+        <a href="#">
+          <img src="images/icon-youtube.svg" class="h-8" alt="youtube icon">
+        </a>
+          <!-- Link 3 -->
+        <a href="#">
+          <img src="images/icon-twitter.svg" class="h-8" alt="twitter icon">
+        </a>
+        <!-- Link 4 -->
+        <a href="#">
+          <img src="images/icon-pinterest.svg" class="h-8" alt="pinterest icon">
+        </a>
+          <!-- Link 5 -->
+        <a href="#">
+          <img src="images/icon-instagram.svg" class="h-8 fill-white" alt="instagram icon">
+        </a>
+      </div>
+    </div>
+    <!-- List Container -->
+    <div class="flex justify-around space-x-32">
+      <div class="flex flex-col space-y-3 text-white">
+        <a href="#" class="hover:brightRed">Home</a>
+        <a href="#" class="hover:brightRed">Pricing</a>
+        <a href="#" class="hover:brightRed">Products</a>
+        <a href="#" class="hover:brightRed">About</a>
+      </div>
+      <div class="flex flex-col space-y-3 text-white">
+        <a href="#" class="hover:brightRed">Careers</a>
+        <a href="#" class="hover:brightRed">Community</a>
+        <a href="#" class="hover:brightRed">Privacy Policy</a>
+      </div>
+    </div>
+
+    <!-- Input Container -->
+    <div class="flex flex-col justify-between">
+      <form>
+        <div class="flex space-x-3">
+          <input type="text" placeholder="Updates in your inbox..." class="flex-1 px-4 rounded-full focus:outline-none">
+          <button class="px-6 py-2 text-white rounded-full bg-brightRed hover:bg-brightRedLight focus:outline-none">
+            Go
+          </button>
+        </div>
+      </form>
+      <div class="hidden text-white md:block">
+        Copyright &copy; 2022, All Rights Reserved
+      </div>
+    </div>
+  </div>
+  </footer>
 
 
 
