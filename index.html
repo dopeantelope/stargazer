@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/reset.css">
   <title>StarGazers</title>
 </head>
-<body class="m-6 h-screen bg-darkBlueBackground md:overflow-hidden">
+<body class="m-6 h-full bg-darkBlueBackground md:overflow-hidden">
 
   <!-- HEADER -->
 
@@ -19,8 +19,8 @@
     <nav class="text-white lg:p-4">
       <div class="flex justify-between items-center">
         <img src="home/logo.svg" alt="logo" class="w-[42px] h-[42px] md:w-[52px] md:h-[52px]">
-        <div class="sm:hidden xl:block line"></div>
-        <button id="menu-btn" class="block mt-[14px] align-middle hamburger md:hidden focus:outline-none">
+        <div class="hidden xl:block line"></div>
+        <button id="menu-btn" class="block z-10 mt-[14px] align-middle hamburger md:hidden focus:outline-none">
           <span class="hamburger-top"></span>
           <span class="hamburger-middle"></span>
           <span class="hamburger-bottom "></span>
@@ -36,7 +36,7 @@
               </a>
             </li>
             <li>
-              <a href='potd.html' class="py-[34px] hover:border-b-4 hover:border-solid hover:border-kindaWhite">
+              <a href='potd.html' class="py-[34px] text-lightBlue hover:border-b-4 hover:border-solid hover:border-kindaWhite">
                 <span class="font-medium">
                 01
                 </span> 
@@ -44,7 +44,7 @@
               </a>
             </li>
             <li>
-              <a href='marsrovers.html' class="py-[34px] hover:border-b-4 hover:border-solid hover:border-kindaWhite">
+              <a href='marsrovers.html' class="py-[34px] text-lightBlue hover:border-b-4 hover:border-solid hover:border-kindaWhite">
                 <span class="font-medium">
                 02
                 </span>
@@ -52,7 +52,7 @@
               </a>
             </li>
             <li>
-              <a href='archive.html' class="py-[34px] hover:border-b-4 hover:border-solid hover:border-kindaWhite">
+              <a href='archive.html' class="py-[34px] text-lightBlue hover:border-b-4 hover:border-solid hover:border-kindaWhite">
                 <span class="font-medium">
                 03
                 </span> 
@@ -68,19 +68,19 @@
       <!-- MOBILE MENU -->
 
       <div class="md:hidden flex justify-end">
-        <div id="menu" class="absolute flex-col items-end mt-[-86px] mr-[-24px] h-screen hidden">
-          <div class="flex flex-col font-['barlow_condensed'] font-light text-xl tracking-widest">
+        <div id="menu" class="absolute flex-col mobileGlass pb-10 items-end mt-[-86px] mr-[-24px] h-full w-2/3 hidden">
+          <div class="flex flex-col pl-14 space-y-8 pt-28 items-start font-['barlow_condensed'] font-light text-white text-base tracking-widest w-full">
             <a href="index.html" class="">
-              01 HOME
+              <span class="font-medium ">00</span> HOME
             </a>
             <a href="potd.html" class="">
-              02 PICTURE OF THE DAY
+              <span class="font-medium">01</span> PICTURE OF THE DAY
             </a>
             <a href="marsrovers.html" class="">
-              03 MARS ROVER
+              <span class="font-medium">02</span> MARS ROVER
             </a>
             <a href="archive.html" class="">
-              04 ARCHIVE
+              <span class="font-medium">03</span> ARCHIVE
             </a>
           </div>
         </div>

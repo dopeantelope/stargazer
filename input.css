@@ -88,6 +88,11 @@ body {
   backdrop-filter: blur(14px);
  }
 
+ .mobileGlass {
+  background-color: rgba(255, 255, 255, .15);  
+  backdrop-filter: blur(16px);
+}
+
 @media(min-width: 768px) {
   .frostedGlass {
     display: block;
@@ -107,11 +112,6 @@ body {
     background-image: url('../home/background-destination-tablet.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-  }
-
-  mobileGlass {
-    background-color: rgba(255, 255, 255, .15);  
-    backdrop-filter: blur(14px);
   }
 }
 

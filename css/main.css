@@ -567,6 +567,10 @@ video {
   right: 1.5rem;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
 .m-6 {
   margin: 1.5rem;
 }
@@ -594,6 +598,10 @@ video {
   margin-top: -2px;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .mt-\[-86px\] {
   margin-top: -86px;
 }
@@ -608,10 +616,6 @@ video {
 
 .mt-16 {
   margin-top: 4rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
 }
 
 .block {
@@ -634,28 +638,40 @@ video {
   height: 42px;
 }
 
-.h-\[150px\] {
-  height: 150px;
-}
-
 .h-\[550px\] {
   height: 550px;
+}
+
+.h-\[150px\] {
+  height: 150px;
 }
 
 .h-\[250px\] {
   height: 250px;
 }
 
+.h-full {
+  height: 100%;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
 .w-\[42px\] {
   width: 42px;
 }
 
-.w-\[150px\] {
-  width: 150px;
+.w-2\/3 {
+  width: 66.666667%;
 }
 
 .w-full {
   width: 100%;
+}
+
+.w-\[150px\] {
+  width: 150px;
 }
 
 .flex-row {
@@ -664,6 +680,10 @@ video {
 
 .flex-col {
   flex-direction: column;
+}
+
+.items-start {
+  align-items: flex-start;
 }
 
 .items-end {
@@ -692,6 +712,12 @@ video {
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
+.space-y-8 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+
 .self-end {
   align-self: flex-end;
 }
@@ -713,6 +739,11 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.border-lightBlue {
+  --tw-border-opacity: 1;
+  border-color: hsl(231 77% 90% / var(--tw-border-opacity));
+}
+
 .bg-darkBlueBackground {
   --tw-bg-opacity: 1;
   background-color: hsl(230 35% 7% / var(--tw-bg-opacity));
@@ -721,6 +752,11 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-yellow-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(202 138 4 / var(--tw-bg-opacity));
 }
 
 .p-6 {
@@ -737,8 +773,50 @@ video {
   padding-bottom: 2rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
+}
+
+.pt-12 {
+  padding-top: 3rem;
+}
+
+.pt-14 {
+  padding-top: 3.5rem;
+}
+
+.pt-20 {
+  padding-top: 5rem;
+}
+
+.pt-36 {
+  padding-top: 9rem;
+}
+
+.pt-28 {
+  padding-top: 7rem;
+}
+
+.pl-14 {
+  padding-left: 3.5rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
 }
 
 .text-center {
@@ -825,13 +903,13 @@ video {
   color: hsl(231 77% 90% / var(--tw-text-opacity));
 }
 
+.text-kindaWhite {
+  color: rgba(255, 255, 255, 0.4);
+}
+
 .text-darkBlueBackground {
   --tw-text-opacity: 1;
   color: hsl(230 35% 7% / var(--tw-text-opacity));
-}
-
-.text-kindaWhite {
-  color: rgba(255, 255, 255, 0.4);
 }
 
 body {
@@ -921,6 +999,12 @@ body {
           backdrop-filter: blur(14px);
 }
 
+.mobileGlass {
+  background-color: rgba(255, 255, 255, .15);
+  -webkit-backdrop-filter: blur(16px);
+          backdrop-filter: blur(16px);
+}
+
 @media(min-width: 768px) {
   .frostedGlass {
     display: block;
@@ -941,12 +1025,6 @@ body {
     background-image: url('../home/background-destination-tablet.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-  }
-
-  mobileGlass {
-    background-color: rgba(255, 255, 255, .15);
-    -webkit-backdrop-filter: blur(14px);
-            backdrop-filter: blur(14px);
   }
 }
 
@@ -1009,12 +1087,21 @@ body {
   .sm\:w-auto {
     width: auto;
   }
+
+  .sm\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 @media (min-width: 768px) {
   .md\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
+  }
+
+  .md\:block {
+    display: block;
   }
 
   .md\:flex {
