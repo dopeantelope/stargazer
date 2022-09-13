@@ -93,6 +93,11 @@ body {
   backdrop-filter: blur(16px);
 }
 
+
+
+
+
+
 @media(min-width: 768px) {
   .frostedGlass {
     display: block;
