@@ -1,106 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;500&family=Bellefair&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/reset.css">
-  <title>StarGazers</title>
-</head>
-<body class="alternateBg p-6 h-screen bg-darkBlueBackground">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;500&family=Bellefair&family=Source+Sans+Pro:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <title>StarGazers</title>
+  </head>
+  <body class="alternateBg p-6 h-screen bg-darkBlueBackground">
+    <!-- HEADER -->
 
-  <!-- HEADER -->
-
-  <header>
-    <nav class="text-white lg:p-4">
-      <div class="flex justify-between items-center">
-        <img src="home/logo.svg" alt="logo" class="w-[42px] h-[42px] md:w-[52px] md:h-[52px]">
-        <div class="sm:hidden xl:block line"></div>
-        <button id="menu-btn" class="block mt-[14px] z-10 align-middle hamburger md:hidden focus:outline-none">
-          <span class="hamburger-top"></span>
-          <span class="hamburger-middle"></span>
-          <span class="hamburger-bottom "></span>
-        </button>
-        <div class="frostedGlass lg:px-24 lg:py-9 lg:mx-[-39px]">
-          <ul class="hidden flex-row md:flex lg:space-x-16 font-['barlow_condensed'] font-light text-base mt-[-2px] lg:pr-20 lg:tracking-widest">
-            <li class="relative">
-              <a href='index.html' class="py-[34px] text-lightBlue hover:border-b-4 hover:border-solid hover:border-kindaWhite">
-                <span class="font-medium">
-                00
-                </span> 
-                HOME
-              </a>
-            </li>
-            <li>
-              <a href='potd.html' class="py-[34px] text-lightBlue hover:border-b-4 hover:border-solid hover:border-kindaWhite">
-                <span class="font-medium">
-                01
-                </span> 
-                PICTURE OF THE DAY
-              </a>
-            </li>
-            <li>
-              <a href='marsrovers.html' class="py-[34px] border-b-4 border-solid border-whites">
-                <span class="font-medium">
-                02
-                </span>
-                MARS ROVER
-              </a>
-            </li>
-            <li>
-              <a href='archive.html' class="py-[34px] text-lightBlue hover:border-b-4 hover:border-solid hover:border-kindaWhite">
-                <span class="font-medium">
-                03
-                </span> 
-                ARCHIVE
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-
-
-      <!-- MOBILE MENU -->
-
-      <div class="md:hidden flex justify-end">
-        <div id="menu" class="absolute flex-col mobileGlass pb-10 items-end mt-[-86px] mr-[-24px] h-full w-2/3 hidden">
-          <div class="flex flex-col pl-14 space-y-8 pt-28 items-start font-['barlow_condensed'] font-light text-white text-base tracking-widest w-full">
-            <a href="index.html" class="">
-              <span class="font-medium ">00</span> HOME
-            </a>
-            <a href="potd.html" class="">
-              <span class="font-medium">01</span> PICTURE OF THE DAY
-            </a>
-            <a href="marsrovers.html" class="">
-              <span class="font-medium">02</span> MARS ROVER
-            </a>
-            <a href="archive.html" class="">
-              <span class="font-medium">03</span> ARCHIVE
-            </a>
+    <header>
+      <nav class="text-white lg:p-4">
+        <div class="flex justify-between items-center">
+          <img
+            src="home/logo.svg"
+            alt="logo"
+            class="w-[42px] h-[42px] md:w-[52px] md:h-[52px]"
+          />
+          <div class="sm:hidden xl:block line"></div>
+          <button
+            id="menu-btn"
+            class="block mt-[14px] z-10 align-middle hamburger md:hidden focus:outline-none"
+          >
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+          <div class="frostedGlass lg:px-24 lg:py-9 lg:mx-[-39px]">
+            <ul
+              class="hidden flex-row md:flex lg:space-x-16 font-['barlow_condensed'] font-light text-base mt-[-2px] lg:pr-20 lg:tracking-widest"
+            >
+              <li class="relative">
+                <a
+                  href="index.html"
+                  class="py-[34px] text-lightBlue hover:border-b-4 hover:border-solid hover:border-kindaWhite"
+                >
+                  <span class="font-medium"> 00 </span>
+                  HOME
+                </a>
+              </li>
+              <li>
+                <a
+                  href="potd.html"
+                  class="py-[34px] text-lightBlue hover:border-b-4 hover:border-solid hover:border-kindaWhite"
+                >
+                  <span class="font-medium"> 01 </span>
+                  PICTURE OF THE DAY
+                </a>
+              </li>
+              <li>
+                <a
+                  href="marsrovers.html"
+                  class="py-[34px] border-b-4 border-solid border-whites"
+                >
+                  <span class="font-medium"> 02 </span>
+                  MARS ROVER
+                </a>
+              </li>
+              <li>
+                <a
+                  href="archive.html"
+                  class="py-[34px] text-lightBlue hover:border-b-4 hover:border-solid hover:border-kindaWhite"
+                >
+                  <span class="font-medium"> 03 </span>
+                  ARCHIVE
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
+
+        <!-- MOBILE MENU -->
+
+        <div class="md:hidden flex justify-end">
+          <div
+            id="menu"
+            class="absolute flex-col mobileGlass pb-10 items-end mt-[-86px] mr-[-24px] h-full w-2/3 hidden"
+          >
+            <div
+              class="flex flex-col pl-14 space-y-8 pt-28 items-start font-['barlow_condensed'] font-light text-white text-base tracking-widest w-full"
+            >
+              <a href="index.html" class="">
+                <span class="font-medium">00</span> HOME
+              </a>
+              <a href="potd.html" class="">
+                <span class="font-medium">01</span> PICTURE OF THE DAY
+              </a>
+              <a href="marsrovers.html" class="">
+                <span class="font-medium">02</span> MARS ROVER
+              </a>
+              <a href="archive.html" class="">
+                <span class="font-medium">03</span> ARCHIVE
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- HERO TEXT -->
+
+    <h1
+      class="block md:py-10 md:pl-24 text-xl py-12 md:text-3xl tracking-widest text-white font-['barlow_condensed'] font-light"
+    >
+      <span class="text-kindaWhite font-medium">02</span> PICK YOUR ROVER
+    </h1>
+
+    <div class="flex flex-col items-center lg:flex-row">
+      <div class="lg:w-1/2">
+        <img src="home/curiosity.jpg" class="w-[600px] lg:pl-[96px]">
       </div>
-    </nav>
-  </header>
+      <div class="flex flex-col items-center lg:w-1/2 lg:pr-[132px] lg:pl-10">
+        <nav
+          class="flex justify-center gap-8 mt-[42px] font-['barlow_condensed'] font-light text-base tracking-widest text-lightBlue"
+        >
+          <h2 id="curiosity-button" class="pb-2 border-b-4 border-solid border-white cursor-pointer">CURIOSITY</h2>
+          <h2 id="opportunity-button" class="pb-2 hover:border-b-4 hover:border-solid hover:border-kindaWhite cursor-pointer">OPPORTUNITY</h2>
+          <h2 id="spirit-opportunity" class="pb-2 hover:border-b-4 hover:border-solid hover:border-kindaWhite cursor-pointer">SPIRIT</h2>
+        </nav>
 
 
 
-  <!-- HERO TEXT -->
-
-  <h1 class="block md:py-10 md:pl-24 text-xl py-12 md:text-3xl tracking-widest text-white font-['barlow_condensed'] font-light">
-    <span class="text-kindaWhite font-medium">02</span> MARS ROVERS
-  </h1>
+        <!---- CURIOSITY --->
 
 
+        <div id="curiosity" class="text-center">
+          <h1 class="text-white font-['bellefair'] text-7xl my-8">CURIOSITY</h1>
 
-  <script src="js/main.js"></script>
-  <script src="js/potd.js"></script>
-  <script src="js/marsrovers.js"></script>
-  <script src="js/archive.js"></script>
-</body>
+          <p id="rover-description"
+            class="subtext text-lightBlue text-center text-lg tracking-wide font-['source_sans_pro'] md:text-left md:mx-0 lg:leading-8"
+          >
+            Curiosity is a car-sized Mars rover designed to explore the Gale crater on Mars. Mission goals include an investigation of the Martian climate and geology, assessment of whether the selected field site offered environmental conditions favorable for microbial life (including investigation of the role of water), and planetary habitability studies in preparation for human exploration.
+          </p>
+        </div>
+
+
+
+
+
+
+
+        <div class="flex justify-center mt-8 mb-10 gap-4">
+          <div id="rover-one" class="rounded-full w-4 h-4 bg-white cursor-pointer"></div>
+          <div id="rover-two" class="rounded-full w-4 h-4 bg-kindaWhite cursor-pointer"></div>
+          <div id="rover-three" class="rounded-full w-4 h-4 bg-kindaWhite cursor-pointer"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/potd.js"></script>
+    <script src="js/marsrovers.js"></script>
+    <script src="js/archive.js"></script>
+  </body>
 </html>

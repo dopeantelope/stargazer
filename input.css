@@ -22,6 +22,19 @@ body {
   margin-left: 50px;
 }
 
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+.rover-highlight {
+  cursor: pointer;
+}
+
+.rover-highlight:hover {
+  border-bottom: 2px solid white;
+  margin-bottom: -2px;
+}
+
 #menu {
   z-index: 1;
 }
