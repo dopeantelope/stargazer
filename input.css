@@ -26,13 +26,18 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   filter: invert(1);
 }
 
+.rover-select {
+  border-bottom: 2px solid white;
+  margin-bottom: -2px;
+}
+
 .rover-highlight {
   cursor: pointer;
 }
 
 .rover-highlight:hover {
-  border-bottom: 2px solid white;
-  margin-bottom: -2px;
+  border-bottom: 4px solid rgba(255, 255, 255, .2);
+  margin-bottom: -4px;
 }
 
 #menu {

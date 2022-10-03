@@ -587,6 +587,11 @@ video {
   margin-bottom: 2rem;
 }
 
+.my-\[38px\] {
+  margin-top: 38px;
+  margin-bottom: 38px;
+}
+
 .mt-\[14px\] {
   margin-top: 14px;
 }
@@ -657,10 +662,6 @@ video {
   height: 150px;
 }
 
-.h-2 {
-  height: 0.5rem;
-}
-
 .h-4 {
   height: 1rem;
 }
@@ -681,16 +682,8 @@ video {
   width: 150px;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
 .w-\[600px\] {
   width: 600px;
-}
-
-.w-2 {
-  width: 0.5rem;
 }
 
 .w-4 {
@@ -830,18 +823,6 @@ video {
   padding-top: 2.5rem;
 }
 
-.pl-\[96px\] {
-  padding-left: 96px;
-}
-
-.pr-\[132px\] {
-  padding-right: 132px;
-}
-
-.pl-10 {
-  padding-left: 2.5rem;
-}
-
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -897,6 +878,11 @@ video {
 
 .text-7xl {
   font-size: 4.5rem;
+  line-height: 1;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
   line-height: 1;
 }
 
@@ -968,13 +954,18 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   filter: invert(1);
 }
 
+.rover-select {
+  border-bottom: 2px solid white;
+  margin-bottom: -2px;
+}
+
 .rover-highlight {
   cursor: pointer;
 }
 
 .rover-highlight:hover {
-  border-bottom: 2px solid white;
-  margin-bottom: -2px;
+  border-bottom: 4px solid rgba(255, 255, 255, .2);
+  margin-bottom: -4px;
 }
 
 #menu {
@@ -1198,9 +1189,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin-right: -39px;
   }
 
-  .lg\:mx-10 {
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
+  .lg\:my-8 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
   .lg\:mb-24 {
@@ -1221,6 +1212,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
   .lg\:mt-\[-20px\] {
     margin-top: -20px;
+  }
+
+  .lg\:mb-10 {
+    margin-bottom: 2.5rem;
   }
 
   .lg\:flex {
@@ -1267,6 +1262,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     align-items: center;
   }
 
+  .lg\:justify-start {
+    justify-content: flex-start;
+  }
+
   .lg\:justify-between {
     justify-content: space-between;
   }
@@ -1311,16 +1310,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     padding-bottom: 8rem;
   }
 
+  .lg\:pl-\[96px\] {
+    padding-left: 96px;
+  }
+
   .lg\:pr-\[132px\] {
     padding-right: 132px;
   }
 
   .lg\:pl-10 {
     padding-left: 2.5rem;
-  }
-
-  .lg\:pl-\[96px\] {
-    padding-left: 96px;
   }
 
   .lg\:text-left {
@@ -1343,6 +1342,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .lg\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .lg\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
   }
 
   .lg\:leading-8 {

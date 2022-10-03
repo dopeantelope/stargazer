@@ -116,15 +116,15 @@
 
     <div class="flex flex-col items-center lg:flex-row">
       <div class="lg:w-1/2">
-        <img src="home/curiosity.jpg" class="w-[600px] lg:pl-[96px]">
+        <img src="home/curiosity.jpeg" id="rover-image" class="w-[600px] lg:pl-[96px] lg:mb-10">
       </div>
-      <div class="flex flex-col items-center lg:w-1/2 lg:pr-[132px] lg:pl-10">
+      <div class="flex flex-col items-center lg:items-start lg:w-1/2 lg:pr-[132px] lg:pl-10">
         <nav
-          class="flex justify-center gap-8 mt-[42px] font-['barlow_condensed'] font-light text-base tracking-widest text-lightBlue"
+          class="flex justify-center lg:justify-start gap-8 mt-[42px] font-['barlow_condensed'] font-light text-base tracking-widest text-lightBlue"
         >
-          <h2 id="curiosity-button" class="pb-2 border-b-4 border-solid border-white cursor-pointer">CURIOSITY</h2>
-          <h2 id="opportunity-button" class="pb-2 hover:border-b-4 hover:border-solid hover:border-kindaWhite cursor-pointer">OPPORTUNITY</h2>
-          <h2 id="spirit-opportunity" class="pb-2 hover:border-b-4 hover:border-solid hover:border-kindaWhite cursor-pointer">SPIRIT</h2>
+          <h2 id="curiosity-button" class="pb-2 border-b-4 rover-highlight rover-select cursor-pointer">CURIOSITY</h2>
+          <h2 id="opportunity-button" class="pb-2 rover-highlight cursor-pointer">OPPORTUNITY</h2>
+          <h2 id="spirit-button" class="pb-2 rover-highlight cursor-pointer">SPIRIT</h2>
         </nav>
 
 
@@ -132,10 +132,10 @@
         <!---- CURIOSITY --->
 
 
-        <div id="curiosity" class="text-center">
+        <div id="curiosity" class="text-center lg:text-left">
           <h1 class="text-white font-['bellefair'] text-7xl my-8">CURIOSITY</h1>
 
-          <p id="rover-description"
+          <p id="curiosity-description"
             class="subtext text-lightBlue text-center text-lg tracking-wide font-['source_sans_pro'] md:text-left md:mx-0 lg:leading-8"
           >
             Curiosity is a car-sized Mars rover designed to explore the Gale crater on Mars. Mission goals include an investigation of the Martian climate and geology, assessment of whether the selected field site offered environmental conditions favorable for microbial life (including investigation of the role of water), and planetary habitability studies in preparation for human exploration.
@@ -144,7 +144,31 @@
 
 
 
+        <!---- OPPORTUNITY --->
 
+        <div id="opportunity" class="hidden text-center lg:text-left">
+          <h1 class="text-white font-['bellefair'] text-6xl lg:text-7xl my-[38px] lg:my-8">OPPORTUNITY</h1>
+
+          <p id="opportunity-description"
+            class="subtext text-lightBlue text-center text-lg tracking-wide font-['source_sans_pro'] md:text-left md:mx-0 lg:leading-8"
+          >
+          Opportunity was the second of the two rovers launched in 2003 to land on Mars and begin traversing the Red Planet in search of signs of ancient water. The rover explored the Martian terrain for almost 15 years, far outlasting her planned 90-day mission. Opportunity's most significant discovery was that long ago at least one area of Mars stayed wet for an extended period and that conditions could have been suitable for sustaining microbial life.
+          </p>
+        </div>
+
+
+
+        <!---- SPIRIT --->
+
+        <div id="spirit" class="hidden text-center lg:text-left">
+          <h1 class="text-white font-['bellefair'] text-7xl my-8">SPIRIT</h1>
+
+          <p id="spirit-description"
+            class="subtext text-lightBlue text-center text-lg tracking-wide font-['source_sans_pro'] md:text-left md:mx-0 lg:leading-8"
+          >
+            Curiosity is a car-sized Mars rover designed to explore the Gale crater on Mars. Mission goals include an investigation of the Martian climate and geology, assessment of whether the selected field site offered environmental conditions favorable for microbial life (including investigation of the role of water), and planetary habitability studies in preparation for human exploration.
+          </p>
+        </div>
 
 
 
