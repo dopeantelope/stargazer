@@ -1,68 +1,70 @@
-const roverOne = document.querySelector('#rover-one')
-const roverTwo = document.querySelector('#rover-two')
-const roverThree = document.querySelector('#rover-three')
-const roverDescription = document.querySelector('#rover-description')
-const curiosityButton = document.querySelector('#curiosity-button')
-const opportunityButton = document.querySelector('#opportunity-button')
-const spiritButton = document.querySelector('#spirit-button')
+// CURIOSITY VARIABLES
 const curiosity = document.querySelector('#curiosity')
+const curiosityDescription = document.querySelector('#curiosity-description')
+const curiosityInfoOne = document.querySelector('#curiosity-info-one')
+
+// OPPORTUNITY VARIABLES
 const opportunity = document.querySelector('#opportunity')
+const opportunityDescription = document.querySelector('#opportunity-description')
+
+// SPIRIT VARIABLES
 const spirit = document.querySelector('#spirit')
-const curiosityDescrip = document.querySelector('#curiosity-description')
-const opportunityDescrip = document.querySelector('#opportunity-description')
-const spiritDescrip = document.querySelector('#spirit-description')
+const spiritDescription = document.querySelector('#spirit-description')
+
+// BUTTONS
+const curiosityNav = document.querySelector('#curiosity-button')
+const opportunityNav = document.querySelector('#opportunity-button')
+const spiritNav = document.querySelector('#spirit-button')
+const roverInfoOne = document.querySelector('#rover-info-one')
+const roverInfoTwo = document.querySelector('#rover-info-two')
+const roverInfoThree = document.querySelector('#rover-info-three')
+
+// OTHER VARIABLES
 const roverImage = document.getElementById('rover-image')
 
 
-roverOne.addEventListener('click', showRoverOne)
-roverTwo.addEventListener('click', showRoverTwo)
-roverThree.addEventListener('click', showRoverThree)
-curiosityButton.addEventListener('click', showCuriosity)
-opportunityButton.addEventListener('click', showOpportunity)
-spiritButton.addEventListener('click', showSpirit)
+
+curiosityNav.addEventListener('click', showCuriosity)
+opportunityNav.addEventListener('click', showOpportunity)
+spiritNav.addEventListener('click', showSpirit)
+roverInfoOne.addEventListener('click', showInfoOne)
+roverInfoTwo.addEventListener('click', showInfoTwo)
+roverInfoThree.addEventListener('click', showInfoThree)
 
 
-function showRoverOne() {
-  roverDescription.style.visibility = 'visible'
-  roverOne.style.backgroundColor = 'white'
-  roverTwo.style.backgroundColor = 'rgba(255, 255, 255, .2)'
-  roverThree.style.backgroundColor = 'rgba(255, 255, 255, .2)'
-}
-
-
-function showRoverTwo() {
-  roverDescription.style.visibility = 'hidden'
-  roverOne.style.backgroundColor = 'rgba(255, 255, 255, .2)'
-  roverTwo.style.backgroundColor = 'white'
-  roverThree.style.backgroundColor = 'rgba(255, 255, 255, .2)'
-}
-
-function showRoverThree() {
-  roverDescription.style.visibility = 'hidden'
-  roverOne.style.backgroundColor = 'rgba(255, 255, 255, .2)'
-  roverTwo.style.backgroundColor = 'rgba(255, 255, 255, .2)'
-  roverThree.style.backgroundColor = 'white'
-}
 
 function showCuriosity() {
-  opportunity.style.display = 'none'
-  spirit.style.display = 'none'
-  curiosity.style.display = 'block'
-  roverImage.src = 'home/curiosity.jpeg'
-  
+  opportunity.style.display = "none"
+  spirit.style.display = "none"
+  curiosity.style.display = "block"
 }
 
 function showOpportunity() {
-  opportunity.style.display = 'block'
-  spirit.style.display = 'none'
-  curiosity.style.display = 'none'
-  roverImage.src = 'home/opportunity.jpeg'
-  
+  curiosity.style.display = "none"
+  spirit.style.display = "none"
+  opportunity.style.display = "block"
 }
 
 function showSpirit() {
-  opportunity.style.display = 'none'
-  spirit.style.display = 'block'
-  curiosity.style.display = 'none'
-  roverImage.src = 'home/spirit.jpg'
+  curiosity.style.display = "none"
+  opportunity.style.display = "none"
+  spirit.style.display = "block"
+}
+
+function showInfoOne() {
+  if (!curiosity.classList.contains('hidden')) {
+    curiosityDescription.style.display = "block"
+    curiosityInfoOne.style.display = 'none'
+  }
+}
+
+function showInfoTwo() {
+  if (!curiosity.classList.contains('hidden')) {
+    curiosityDescription.style.display = 'none'
+    curiosityInfoOne.style.display = 'block'
+  }
+}
+
+function showInfoThree() {
+  console.log('fdjfld')
 }
