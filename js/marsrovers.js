@@ -1,70 +1,108 @@
-// CURIOSITY VARIABLES
+// ROVER VARIABLES
 const curiosity = document.querySelector('#curiosity')
-const curiosityDescription = document.querySelector('#curiosity-description')
-const curiosityInfoOne = document.querySelector('#curiosity-info-one')
-
-// OPPORTUNITY VARIABLES
 const opportunity = document.querySelector('#opportunity')
-const opportunityDescription = document.querySelector('#opportunity-description')
-
-// SPIRIT VARIABLES
 const spirit = document.querySelector('#spirit')
-const spiritDescription = document.querySelector('#spirit-description')
 
-// BUTTONS
-const curiosityNav = document.querySelector('#curiosity-button')
-const opportunityNav = document.querySelector('#opportunity-button')
-const spiritNav = document.querySelector('#spirit-button')
-const roverInfoOne = document.querySelector('#rover-info-one')
-const roverInfoTwo = document.querySelector('#rover-info-two')
-const roverInfoThree = document.querySelector('#rover-info-three')
-
-// OTHER VARIABLES
 const roverImage = document.getElementById('rover-image')
+const rovers = [curiosity, opportunity, spirit]
+let currentRover = rovers.filter(rover => !rover.classList.contains('hidden'))
+let roverId = currentRover[0].id
 
+let roverInfoOne = document.getElementById('rover-info-one')
+let roverInfoTwo = document.getElementById('rover-info-two')
+let roverInfoThree = document.getElementById('rover-info-three')
 
+let roverInfoArrays = [roverInfoOne, roverInfoTwo, roverInfoThree]
+let currentButton = roverInfoArrays.filter(info => info.classList.contains('bg-white'))
 
-curiosityNav.addEventListener('click', showCuriosity)
-opportunityNav.addEventListener('click', showOpportunity)
-spiritNav.addEventListener('click', showSpirit)
-roverInfoOne.addEventListener('click', showInfoOne)
-roverInfoTwo.addEventListener('click', showInfoTwo)
-roverInfoThree.addEventListener('click', showInfoThree)
-
-
-
-function showCuriosity() {
-  opportunity.style.display = "none"
-  spirit.style.display = "none"
-  curiosity.style.display = "block"
+// ROVER INFO BUTTONS
+const roverInfoButtons = document.getElementsByClassName('rover-info-button')
+for (let i = 0; i < roverInfoButtons.length; i++) {
+  roverInfoButtons[i].addEventListener('click', showRoverInfo)
 }
 
-function showOpportunity() {
-  curiosity.style.display = "none"
-  spirit.style.display = "none"
-  opportunity.style.display = "block"
+// EVENT LISTENERS FOR NAV BUTTONS
+let navButtons = document.getElementsByClassName('nav-button')
+for (let i = 0; i < navButtons.length; i++) {
+  navButtons[i].addEventListener('click', showDescription)
 }
 
-function showSpirit() {
-  curiosity.style.display = "none"
-  opportunity.style.display = "none"
-  spirit.style.display = "block"
+
+function checkRover() {
+  currentRover = rovers.filter(rover => !rover.classList.contains('hidden'))
+  roverId = currentRover[0].id
 }
 
-function showInfoOne() {
-  if (!curiosity.classList.contains('hidden')) {
-    curiosityDescription.style.display = "block"
-    curiosityInfoOne.style.display = 'none'
+function checkInfoButton() {
+  currentButton = roverInfoArrays.filter(info => info.classList.contains('bg-white'))
+}
+
+
+function showDescription() {
+  showRoverOne()
+  let id = this.innerText.toLowerCase()
+  currentRover = rovers.filter(rover => !rover.classList.contains('hidden'))
+  if (currentRover[0].id != id) {
+    currentRover[0].classList.add('hidden')
+  }
+  document.getElementById(`${id}`).classList.remove('hidden')
+  highlightNavButton(id)
+}
+
+function highlightNavButton(id) {
+  if (id == currentRover[0].id) {
+    return
+  } else {
+    let prevRover = currentRover[0].id
+    document.getElementById(`${id}-button`).classList.add('rover-select')
+    document.getElementById(`${prevRover}-button`).classList.remove('rover-select')
+    document.getElementById(`${id}-button`).classList.remove('rover-highlight')
+    document.getElementById(`${prevRover}-button`).classList.add('rover-highlight')
   }
 }
 
-function showInfoTwo() {
-  if (!curiosity.classList.contains('hidden')) {
-    curiosityDescription.style.display = 'none'
-    curiosityInfoOne.style.display = 'block'
+function showRoverOne() {
+  checkRover()
+
+  document.getElementById(`${roverId}-info-1`).classList.remove('hidden')
+  document.getElementById(`${roverId}-info-2`).classList.add('hidden')
+  document.getElementById(`${roverId}-info-3`).classList.add('hidden')
+  roverInfoOne.classList.add('bg-white')
+  roverInfoOne.classList.remove('bg-kindaWhite')
+  roverInfoTwo.classList.add('bg-kindaWhite')
+  roverInfoThree.classList.add('bg-kindaWhite')
+
+}
+
+
+function showRoverInfo() {
+  checkRover()
+  highlightInfoNav(this)
+  if (this.id == 'rover-info-one') {
+    document.getElementById(`${roverId}-info-1`).classList.remove('hidden')
+    document.getElementById(`${roverId}-info-2`).classList.add('hidden')
+    document.getElementById(`${roverId}-info-3`).classList.add('hidden')
+  } else if (this.id == 'rover-info-two') {
+    document.getElementById(`${roverId}-info-1`).classList.add('hidden')
+    document.getElementById(`${roverId}-info-2`).classList.remove('hidden')
+    document.getElementById(`${roverId}-info-3`).classList.add('hidden')
+  } else if (this.id == 'rover-info-three') {
+    document.getElementById(`${roverId}-info-1`).classList.add('hidden')
+    document.getElementById(`${roverId}-info-2`).classList.add('hidden')
+    document.getElementById(`${roverId}-info-3`).classList.remove('hidden')
   }
 }
 
-function showInfoThree() {
-  console.log('fdjfld')
+function highlightInfoNav(button) {
+  if (button == currentButton) {
+    return
+  } else {
+    checkInfoButton()
+    let prevButton = currentButton[0].id
+    console.log(currentButton)
+    document.getElementById(`${button.id}`).classList.add('bg-white')
+    document.getElementById(`${button.id}`).classList.remove('bg-kindaWhite')
+    document.getElementById(`${prevButton}`).classList.remove('bg-white')
+    document.getElementById(`${prevButton}`).classList.add('bg-kindaWhite')
+  }
 }

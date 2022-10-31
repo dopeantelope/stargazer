@@ -109,7 +109,7 @@
     <!-- HERO TEXT -->
 
     <h1
-      class="block md:py-10 md:pl-24 text-xl py-12 md:text-3xl tracking-widest text-white font-['barlow_condensed'] font-light"
+      class="block md:py-10 md:pl-24 text-xl py-12 md:text-3xl tracking-widest text-white font-['barlow_condensed'] lg:-my-4 lg:-mb-6 font-light"
     >
       <span class="text-kindaWhite font-medium">02</span> PICK YOUR ROVER
     </h1>
@@ -130,17 +130,17 @@
         >
           <h2
             id="curiosity-button"
-            class="pb-2 border-b-4 rover-select cursor-pointer"
+            class="nav-button pb-2 border-b-4 rover-select cursor-pointer"
           >
             CURIOSITY
           </h2>
           <h2
             id="opportunity-button"
-            class="pb-2 rover-highlight cursor-pointer"
+            class="nav-button pb-2 rover-highlight cursor-pointer"
           >
             OPPORTUNITY
           </h2>
-          <h2 id="spirit-button" class="pb-2 rover-highlight cursor-pointer">
+          <h2 id="spirit-button" class="nav-button pb-2 rover-highlight cursor-pointer">
             SPIRIT
           </h2>
         </nav>
@@ -148,36 +148,46 @@
         <!---- CURIOSITY --->
 
         <div id="curiosity" class="text-center lg:text-left">
-          <h1 class="text-white font-['bellefair'] text-7xl my-8">CURIOSITY</h1>
+          <h1 class="text-white font-['bellefair'] text-7xl mt-8 mb-6">CURIOSITY</h1>
+          <div id="curiosity-info-1" class="w-[500px]">
+            <p
+              id="curiosity-description"
+              class="subtext text-lightBlue text-center text-lg tracking-wide font-['source_sans_pro'] md:text-left md:mx-0 lg:leading-8"
+            >
+              Curiosity is a car-sized Mars rover designed to explore the Gale
+              crater on Mars. Mission goals include an investigation of the
+              Martian climate and geology, assessment of whether the selected
+              field site offered environmental conditions favorable for microbial
+              life (including the role of water), and planetary
+              habitability studies in preparation for human exploration.
+            </p>
+          </div>
 
-          <p
-            id="curiosity-description"
-            class="subtext text-lightBlue text-center text-lg tracking-wide font-['source_sans_pro'] md:text-left md:mx-0 lg:leading-8"
-          >
-            Curiosity is a car-sized Mars rover designed to explore the Gale
-            crater on Mars. Mission goals include an investigation of the
-            Martian climate and geology, assessment of whether the selected
-            field site offered environmental conditions favorable for microbial
-            life (including investigation of the role of water), and planetary
-            habitability studies in preparation for human exploration.
-          </p>
+          <div id="curiosity-info-2" class="hidden">
+            <!-- <div class="flex flex-col items-center"> -->
+              <h2 id="curiosity-status" class="font-['barlow_condensed'] 
+              font-light text-base tracking-widest text-lightBlue mb-1"
+              >
+                STATUS
+              </h2>
+              <p class="text-white font-['bellefair'] text-[28px] mb-3">ACTIVE</p>
 
-          <div id="curiosity-info-one" class="hidden">
-            <h2 id="curiosity-status" class="text-white font-['bellefair'] 
-            text-3xl"
-            >
-              STATUS
-            </h2>
-            <h2 id="curiosity-launch" class="text-white font-['bellefair'] 
-            text-3xl"
-            >
-              LAUNCH DATE
-            </h2>
-            <h2 id="curiosity-landing" class="text-white font-['bellefair'] 
-            text-3xl"
-            >
-              LANDING DATE
-            </h2>
+              <h2 id="curiosity-launch" class="font-['barlow_condensed'] 
+              font-light text-base tracking-widest text-lightBlue mb-1"
+              >
+                LAUNCH DATE
+              </h2>
+
+              <p class="text-white font-['bellefair'] text-[28px] mb-3">26 NOV 2011</p>
+              <h2 id="curiosity-landing" class="font-['barlow_condensed'] 
+              font-light text-base tracking-widest text-lightBlue mb-1"
+              >
+                LANDING DATE
+              </h2>
+              <p class="text-white font-['bellefair'] text-[28px]">6 AUG 2012</p>
+          </div>
+          <div id="curiosity-info-3" class="hidden">
+            <p class="text-white">hi curiosity</p>
           </div>
         </div>
 
@@ -185,55 +195,94 @@
 
         <div id="opportunity" class="hidden text-center lg:text-left">
           <h1
-            class="text-white font-['bellefair'] text-6xl lg:text-7xl my-[38px] lg:my-8"
+            class="text-white font-['bellefair'] text-6xl lg:text-7xl mt-8 mb-6"
           >
             OPPORTUNITY
           </h1>
-
-          <p
-            id="opportunity-description"
-            class="subtext text-lightBlue text-center text-lg tracking-wide font-['source_sans_pro'] md:text-left md:mx-0 lg:leading-8"
-          >
-            Opportunity was the second of the two rovers launched in 2003 to
-            land on Mars and begin traversing the Red Planet in search of signs
-            of ancient water. The rover explored the Martian terrain for almost
-            15 years, far outlasting her planned 90-day mission. Opportunity's
-            most significant discovery was that long ago at least one area of
-            Mars stayed wet for an extended period and that conditions could
-            have been suitable for sustaining microbial life.
-          </p>
+          <div id="opportunity-info-1">
+            <p
+              id="opportunity-description"
+              class="subtext text-lightBlue text-center text-lg tracking-wide font-['source_sans_pro'] md:text-left md:mx-0 lg:leading-8"
+            >
+              Opportunity was launched in 2003 to land on Mars and begin traversing the Red Planet in search of sign of ancient water. The rover explored for almost 15 years, far outlasting her planned 90-day mission. Opportunity's most significant discovery was that long ago at least one area of Mars stayed wet for an extended period and that conditions could
+              have been suitable for sustaining microbial life.
+            </p>
+          </div>
         </div>
 
+        <div id="opportunity-info-2" class="hidden">
+          <!-- <div class="flex flex-col items-center"> -->
+            <h2 id="curiosity-status" class="font-['barlow_condensed'] 
+            font-light text-base tracking-widest text-lightBlue mb-1"
+            >
+              STATUS
+            </h2>
+            <p class="text-white font-['bellefair'] text-[28px] mb-3">ACTIVE</p>
+
+            <h2 id="curiosity-launch" class="font-['barlow_condensed'] 
+            font-light text-base tracking-widest text-lightBlue mb-1"
+            >
+              LAUNCH DATE
+            </h2>
+
+            <p class="text-white font-['bellefair'] text-[28px] mb-3">26 NOV 2011</p>
+            <h2 id="curiosity-landing" class="font-['barlow_condensed'] 
+            font-light text-base tracking-widest text-lightBlue mb-1"
+            >
+              LANDING DATE
+            </h2>
+            <p class="text-white font-['bellefair'] text-[28px]">6 AUG 2012</p>
+        </div>
+        <div id="opportunity-info-3" class="hidden">
+          <p class="text-white">hi opportunity</p>
+        </div>
         <!---- SPIRIT --->
 
         <div id="spirit" class="hidden text-center lg:text-left">
-          <h1 class="text-white font-['bellefair'] text-7xl my-8">SPIRIT</h1>
+          <h1 class="text-white font-['bellefair'] text-7xl mt-8 mb-6">SPIRIT</h1>
+          <div id="spirit-info-1">
+            <p
+              id="spirit-description"
+              class="subtext text-lightBlue text-center text-lg tracking-wide font-['source_sans_pro'] md:text-left md:mx-0 lg:leading-8"
+            >
+            Launched at the same time as her twin, Opportunity, in 2003 to explore Mars and search for signs of past life, Spirit far outlasted her planned 90-day mission, lasting over six years. Among her myriad discoveries, Spirit found evidence that Mars was once much wetter than it is today and helped scientists better understand the Martian wind.
+            </p>
+          </div>
+        </div>
 
-          <p
-            id="spirit-description"
-            class="subtext text-lightBlue text-center text-lg tracking-wide font-['source_sans_pro'] md:text-left md:mx-0 lg:leading-8"
+        <div id="spirit-info-2" class="hidden">
+          <h2 id="opportunity-status" class="font-['barlow_condensed'] 
+          font-light text-base tracking-widest text-lightBlue"
           >
-            Curiosity is a car-sized Mars rover designed to explore the Gale
-            crater on Mars. Mission goals include an investigation of the
-            Martian climate and geology, assessment of whether the selected
-            field site offered environmental conditions favorable for microbial
-            life (including investigation of the role of water), and planetary
-            habitability studies in preparation for human exploration.
-          </p>
+            STATUS
+          </h2>
+          <h2 id="opportunity-launch" class="font-['barlow_condensed'] 
+          font-light text-base tracking-widest text-lightBlue"
+          >
+            LAUNCH DATE
+          </h2>
+          <h2 id="opportunity-landing" class="font-['barlow_condensed'] 
+          font-light text-base tracking-widest text-lightBlue"
+          >
+            LANDING DATE
+          </h2>
+        </div>
+        <div id="spirit-info-3" class="hidden">
+          <p class="text-white">hi spirit</p>
         </div>
 
         <div class="flex justify-center mt-8 mb-10 gap-4">
           <div
             id="rover-info-one"
-            class="rounded-full w-4 h-4 bg-white cursor-pointer"
+            class="rover-info-button rounded-full w-4 h-4 bg-white cursor-pointer"
           ></div>
           <div
             id="rover-info-two"
-            class="rounded-full w-4 h-4 bg-kindaWhite cursor-pointer"
+            class="rover-info-button rounded-full w-4 h-4 bg-kindaWhite cursor-pointer"
           ></div>
           <div
             id="rover-info-three"
-            class="rounded-full w-4 h-4 bg-kindaWhite cursor-pointer"
+            class="rover-info-button rounded-full w-4 h-4 bg-kindaWhite cursor-pointer"
           ></div>
         </div>
       </div>

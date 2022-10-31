@@ -1,4 +1,4 @@
-document.querySelector('#archive-button').addEventListener('click', getPic)
+// document.querySelector('#archive-button').addEventListener('click', getPic)
 
 
 function getPic() {
