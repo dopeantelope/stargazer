@@ -9,7 +9,7 @@ A web application for space fans that displays the Astronomy Picture of the Day 
 A JavaScript web application that utilizes the NASA APOD API to display the NASA picture of the day & allow users to browse the archive based on date input. Tailwind was used as the CSS framework.
 
 
-**Tech used:** HTML, CSS, JavaScript, TailwindCSS, Node.js, NASA API
+**Tech used:** HTML, CSS, JavaScript, TailwindCSS, NASA API
 
 
 ## Optimizations
@@ -19,4 +19,4 @@ Further optimizations would include images taken by the Mars Rover.
 
 ## Lessons Learned:
 
-- [x] Tailwind
+- [x] First project using Tailwind CSS and can now see the benefits of using a CSS framework!
